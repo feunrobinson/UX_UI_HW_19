@@ -1,0 +1,163 @@
+h1 p{
+  font-family: 'Sora', sans-serif;
+}
+h2{
+  font-family: 'Radley',serif;
+}
+#headername{
+  font-size: 64px;
+}
+#headerdescription{
+  font-size: 35px;
+}
+h1{
+  font-size: 30px;
+}
+/* CSS Navigation */
+.logo{
+float: left;
+margin-left: 50px;
+}
+
+
+ul.nav{
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display: inline;
+  float: right;
+  margin-top: 30px;
+  margin-right: 50px;
+  padding: 15px;
+}
+
+body, html{
+  height: 100%;
+}
+
+/* CSS heroimage */
+.heroImg{
+  background-image: url("Images/Hero\ Image.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.herotext{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.content{
+  width: 500px;
+  margin: 0 auto;
+}
+.profilepic{
+  position: absolute;
+  right: 332px;
+  top: 280px;
+  width: 400px;
+  height: 800px;
+}
+
+/* CSS Footer */
+footer{
+  background-color: #E5E1F3;
+  padding: 25px;
+}
+footer ul{
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  padding: 1%;
+}
+/* My UX Skills section coded using CSS flex*/
+.secondsection{
+  background-color: #E5E1F3;
+}
+.flexContainer{
+  display: flex;
+  margin-right: 25px;
+  margin-left: 25px;
+  flex-direction: row;
+}
+#aboutme{
+  text-align: center;
+  flex: 33%;
+  padding: 35px;
+}
+ul.toolbox{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#tools{
+  flex: 33%;
+  padding: 50px;
+  text-align: center;
+  line-height: 0;
+}
+#myskills{
+  flex: 33%;
+  padding: 35px;
+  text-align: center;
+}
+
+/* Projects section coded using CSS flex*/
+#workGrid{
+  background-color: #2A1B3D;
+  color:white;
+  padding: 50px;
+}
+.workGrid{
+  margin: 25px;
+  display: grid;
+  height: 95vh;
+  min-height: 500px;
+  padding: 25px;
+  grid-template-rows: 50 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "JTD staynplay"
+  "FTC FTC";
+}
+#JTD{
+  grid-area: JTD;
+  background-image: url("Images/JTD.png");
+  background-size: 80mm;
+  background-repeat: no-repeat;
+}
+#staynplay{
+  grid-area: staynplay;
+  background-image: url("Images/StaynPlay.png");
+  background-size: 80mm;
+  background-repeat: no-repeat;
+}
+#FTC{
+  grid-area: FTC;
+  background-image: url("Images/FTC.png");
+  background-size: 80mm;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 600){
+  .flexContainer{
+    display: flex;
+    margin: 0 5%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .workGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"JTD" "StaynPlay" "FTC";
+  }
+}
