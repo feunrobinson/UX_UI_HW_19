@@ -9,12 +9,12 @@
 <body>
 <div class="heroImg">
     <section Class="navigation">
-        <a href="default" class="logo"><img src="Images/FR.svg" alt="Logo"></a>
-        <ul class="nav">
-            <li><a href="resume.asp">Resume</a></li>
-            <li><a href="chatbox.asp">Let's Chat!</a></li>
-            <li><a href="projects.asp">Projects</a></li>
-            <li><a href="aboutme.asp">About Me</a></li>
+        <a href="#home" class="logo"><img src="Images/FR.svg" alt="Logo"></a>
+        <ul>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#chatbox">Let's Chat!</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#aboutme">About Me</a></li>
         </ul>
     </section>
     <div class="herotext">
@@ -26,7 +26,7 @@
         <img src="Images/PortfolioPIC.jpeg" alt="Profile Pic">
     </div>
 </div>
-<section class="secondsection">
+<section id="about">
     <div class="flexContainer">
         <div id="aboutme">
             <h1>About Me</h1>
@@ -53,13 +53,39 @@
             <img src="Images/My Skills.png">
         </div>
     </div>
-<section id="workGrid">
+<section id="projects">
     <h1>Projects</h1>
-    <div class="workGrid">
-        <div id="JTD"><h1>Journey To Dream</h1></div>
-        <div id="staynplay"><h1>Stay 'n Play</h1></div>
-        <div id="FTC"><h1>Federal Trade Commission</h1></div>
-        <div><h3>View All Projects</h3></div>
+    <div class="projects">
+        <div class="card">
+            <img src="Images/JTD.png" alt="Journey to Dream">
+            <div class="overlay overlay-blur">
+                <a href="#JTD">Journey to Dream</a>
+                <p>Nonprofit Redesign</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Images/StaynPlay.png" alt="Stay 'n Play'">
+            <div class="overlay overlay-blur">
+                <a href="#staynplay">Stay 'n Play</a>
+                <p>Mobile App Design</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Images/FTC.png" alt="Federal Trade Commission">
+            <div class="overlay overlay-blur">
+                <a href="#FTC">FTC</a>
+                <p>Government Page Redesign</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h1>Let's Chat!</h1>
+    <div class="contactform">
+        <div id="name"><p>Name</p></div>
+        <div id="email"><p>Email</p></div>
+        <div id="message"><p>Message</p></div>
+        <button>Send</button>
     </div>
 </section>
 <footer>
@@ -70,7 +96,7 @@
     </ul>
 </footer>
 </section>
-</header>
 </body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </html>
