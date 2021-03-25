@@ -12,6 +12,10 @@ $('.navigation a').on('click', function(e){
     }
 });
 //logo click
-$('.logo').on('click', function(e){
-    $("html,body").animate({'scrollTop':0}, 2000)
+$('.scrolltotop').on('click', function(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 });

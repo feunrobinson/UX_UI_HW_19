@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 html, body{
     font-family: 'Sora', sans-serif;
     background-color: #E5E1F3;
@@ -26,7 +29,7 @@ p{
 }
 
 /* CSS Navigation */
-.logo{
+.scrolltotop{
 float: left;
 margin-left: 50px;
 }
@@ -202,16 +205,5 @@ ul.toolbox{
 
 
 @media only screen and (max-width: 600){
-  .flexContainer{
-    display: flex;
-    margin: 0 5%;
-    width: 100%;
-    flex-direction: column;
-  }
-  .workGrid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"JTD" "StaynPlay" "FTC";
-  }
+  
 }
